@@ -4,7 +4,7 @@ Here's the English documentation in markdown format:
 
 ## What is this?
 
-This is an autonomous agent system called "iris" that uses the DeepSeek API to execute commands on an Ubuntu system. The agent can interpret natural language tasks, generate appropriate terminal commands, execute them, and iteratively work towards completing complex objectives.
+This is an autonomous agent system called "iris" that uses the OpenAI API to execute commands on an Ubuntu system. The agent can interpret natural language tasks, generate appropriate terminal commands, execute them, and iteratively work towards completing complex objectives.
 
 ### Key Features:
 - **Natural Language Processing**: Accepts tasks in plain English
@@ -39,7 +39,7 @@ python3 agent_system.py
 1. The system starts and loads API configuration
 2. You provide a task description (e.g., "install Docker and run a Redis container")
 3. The agent:
-   - Sends the task to DeepSeek API
+   - Sends the task to OpenAI API
    - Receives command suggestions
    - Parses and executes commands in the terminal
    - Shows results
@@ -56,7 +56,7 @@ python3 agent_system.py
 
 ### API Configuration
 
-The system requires DeepSeek API access. You can configure it in several ways:
+The system requires OpenAI API access. You can configure it in several ways:
 
 #### Option 1: Configuration File (Recommended)
 Create a file named `api.txt` with the following format:
